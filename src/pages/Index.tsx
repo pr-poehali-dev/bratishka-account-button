@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
@@ -48,14 +47,13 @@ const Index = () => {
               size="icon"
               className="rounded-full hover:bg-gray-100 active:bg-gray-200 transition-colors"
               aria-label="Аккаунт"
+              onClick={() => (window.location.href = "/profile")}
             >
               <Icon name="User" className="h-5 w-5 text-gray-700" />
             </Button>
 
             {/* Кнопка входа */}
-            <Button className="bg-purple-600 hover:bg-purple-700">
-              Войти
-            </Button>
+            <Button className="bg-purple-600 hover:bg-purple-700">Войти</Button>
           </div>
         </div>
       </header>
@@ -69,15 +67,14 @@ const Index = () => {
                 Делайте покупки с комфортом
               </h1>
               <p className="text-gray-600 mb-6">
-                Широкий ассортимент товаров по лучшим ценам с доставкой по всей России
+                Широкий ассортимент товаров по лучшим ценам с доставкой по всей
+                России
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button className="bg-purple-600 hover:bg-purple-700">
                   Каталог товаров
                 </Button>
-                <Button variant="outline">
-                  Специальные предложения
-                </Button>
+                <Button variant="outline">Специальные предложения</Button>
               </div>
             </div>
 
@@ -85,10 +82,18 @@ const Index = () => {
               <div className="bg-blue-200 rounded-lg overflow-hidden aspect-[4/3]">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="relative w-full h-full">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform rotate-12 text-blue-500 font-bold text-5xl">10% OFF</div>
-                    <div className="absolute top-1/3 right-1/3 transform rotate-6 text-purple-500 font-bold text-4xl">SALE</div>
-                    <div className="absolute bottom-1/3 left-1/3 transform -rotate-12 text-blue-600 font-bold text-3xl">30% OFF</div>
-                    <div className="absolute bottom-1/2 right-1/2 transform rotate-45 text-pink-600 font-bold text-5xl">50%</div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform rotate-12 text-blue-500 font-bold text-5xl">
+                      10% OFF
+                    </div>
+                    <div className="absolute top-1/3 right-1/3 transform rotate-6 text-purple-500 font-bold text-4xl">
+                      SALE
+                    </div>
+                    <div className="absolute bottom-1/3 left-1/3 transform -rotate-12 text-blue-600 font-bold text-3xl">
+                      30% OFF
+                    </div>
+                    <div className="absolute bottom-1/2 right-1/2 transform rotate-45 text-pink-600 font-bold text-5xl">
+                      50%
+                    </div>
                   </div>
                 </div>
               </div>
